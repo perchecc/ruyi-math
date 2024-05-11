@@ -1,0 +1,25 @@
+{
+  "description": "基于`decimal.js`的数学运算的简单工具",
+  "name": "ruyi-math",
+  "version": "0.0.3",
+  "main": "dist/ruyi-math.cjs.js",
+  "module": "dist/ruyi-math.esm.js",
+  "browser": "dist/ruyi-math.umd.js",
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.29.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
